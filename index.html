@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="logo-light.png" />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Comforter&family=Flavors&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
+  />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="stylesheet.css" />
+    <title>Xpertify Bank</title>
+    <link rel="shortcut icon" href="resources/logo-light.png" type="image/x-icon" />
+    <!-- <h1>XPERTIFY BANK</h1> -->
+  </head>
+  
+  
+  <body>
+
+    <nav>
+      <div class="navbar">
+        <div class="bankservices">
+          <p><a style="text-decoration: none;" href="">
+            BANKING SERVICES</p>
+          </a>
+        </div>
+        <div class="Aboutus">
+          <p><a style="text-decoration: none;" href="">
+            About Us
+          </a></p>
+        </div>
+        <div class="contact">
+          <p><a style="text-decoration: none;" href="">Contact Us</a></p>
+        </div>
+      </div>
+      <p class="welcome">Log-in to get started with Xpertify</p>
+      <div class="logindiv">
+
+        <form action="" class="login">
+          <input
+          type="text"
+          placeholder="USER"
+          class="login__input login__input--user"
+        />
+        <input
+          type="password"
+          placeholder="PIN"
+          class="login__input login__input--pin"
+          />
+          <button class="login__btn">&rarr;</button>
+        </form>
+      </div>
+      <!-- <button class="darkmode">
+        <img src="night-mode.png" alt="nightmode">
+      </button> -->
+      <a href="index.html">
+        <img src="resources/logo-light.png" alt="logo" class="logo-light" />
+      </a>
+    </nav>
+    <main class="app">
+      <!-- BALAMNCE -->
+      <div class="balance">
+        <div class="topdiv">
+          <div class="logout">
+            <a style="text-decoration: none;" href="">  <p> <img src="resources/logout.png" alt="">
+              Log-out
+            </p></a>
+          </div>
+          <div class="balancediv">
+            <p class="balance__label">Current Balance</p>
+            <p class="balance__date">
+              As of <span class="date">Today</span>
+            </p>
+          </div>
+          <p class="balance__value">
+            ₹ 10000.00 </p>
+        </div>
+       
+      </div>
+      <!-- MOVEMENTS -->
+      <div class="movements">
+        <div class="movements__row">
+          <div class="movements__type movements__type--deposit">
+            2 : deposit
+          </div>
+          <div class="movements__date">3 Days ago</div>
+          <div class="movements__value">₹ 5000</div>
+        </div>
+        <div class="movements__row">
+          <div class="movements__type movements__type--withdrawl">
+            1 : withdrawl
+          </div>
+          <div class="movements__date">24/01/2037</div>
+          <div class="movements__value">₹ -378</div>
+        </div>
+      </div>
+      <!-- SUMMARY -->
+      <div class="summary">
+        <p class="summary__label">In</p>
+        <p class="summary__value summary__value--in">₹ 0000</p>
+        <p class="summary__label">Out</p>
+        <p class="summary__value summary__value--out">₹ 0000</p>
+        <p class="summary__label">Interest</p>
+        <p class="summary__value summary__value--interest">₹ 0000</p>
+      </div>
+      <!-- OPERATION: TRANSFERS -->
+      <div class="operation operation--transfer">
+        <h2>Transfer money</h2>
+        <form class="form form--transfer">
+          <input type="text" class="form__input form__input--to" placeholder="username" />
+          <input type="number" class="form__input form__input--amount" />
+          <button class="form__btn form__btn--transfer">&rarr;</button>
+          <label class="form__label">Transfer to</label>
+          <label class="form__label">Amount</label>
+        </form>
+      </div>
+      <!-- OPERATION: LOAN -->
+      <div class="operation operation--loan">
+        <h2>Request loan</h2>
+        <form class="form form--loan">
+          <input type="number" class="form__input form__input--loan-amount" />
+          <button class="form__btn form__btn--loan">&rarr;</button>
+          <label class="form__label form__label--loan">Amount</label>
+        </form>
+      </div>
+
+      <!-- OPERATION: CLOSE -->
+      <div class="operation operation--close">
+        <h2>Close account</h2>
+        <form class="form form--close">
+          <input type="text" class="form__input form__input--user" />
+          <input
+            type="password"
+            maxlength="6"
+            class="form__input form__input--pin"
+          />
+          <button class="form__btn form__btn--close">&rarr;</button>
+          <label class="form__label">Confirm user</label>
+          <label class="form__label">Confirm PIN</label>
+        </form>
+      </div>
+
+      <!-- LOGOUT TIMER -->
+
+    </main>
+    <script src="script.js"></script>
+    <div class="logincredentials">
+      <center> <b> <p>SAMPLE LOGIN CREDENTIALS (user : pass) : tk:1234 ; zk:1234 ; aa:1234 ; my:1234 ; </p> </b></center>
+    </div>
+    <div class="mailimg">
+
+      <p> <b>Contact Me &nbsp </b></p>
+      <a href="mailto:tayyabkhangk4734@gmail.com">
+        <img src="resources/mail.png" alt="mail" srcset="" class="mailimg"> 
+      </a>
+    </div>
+    <div class="footer">
+      <p class="footer">© Made by Tayyab Khan</p>
+    </div>
+</body>
+</html>
